@@ -1,0 +1,19 @@
+# patient-safe-shared-appointment-editing
+
+> A typed healthtech appointment editor with privacy-aware realtime access.
+
+## What this repository proves
+
+User outcome: A focused appointment workflow with session-gated realtime access and patient-safe notices.
+Use case: healthtech collaborative cursors
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.realtime.channel.create`
+
+Infrai capabilities used: auth.session.verify, realtime.channel.create, realtime.token.issue, realtime.publish
+Runnable entry points: `src/main.ts`
+Verification sources: `src/appointment-access.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt

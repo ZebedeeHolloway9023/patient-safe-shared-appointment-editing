@@ -1,0 +1,17 @@
+{
+  "name": "patient-safe-shared-appointment-editing",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "example": "node src/main.ts",
+    "test": "node src/appointment-access.test.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.2",
+    "@types/node": "^22.10.2"
+  },
+  "dependencies": {
+    "zod": "^3.24.1"
+  }
+}
